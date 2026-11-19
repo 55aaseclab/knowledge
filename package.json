@@ -1,0 +1,19 @@
+{
+  "name": "knowledge",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/runtime/server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "export:content": "node scripts/export-content.mjs"
+  },
+  "dependencies": {
+    "@astrojs/markdown-remark": "7.2.0",
+    "github-slugger": "2.0.0",
+    "rehype-katex": "7.0.1",
+    "remark-math": "6.0.0",
+    "parse5": "7.3.0"
+  },
+  "version": "0.1.24",
+  "description": "独立知识阅读应用：Notes、Library 与项目参考"
+}

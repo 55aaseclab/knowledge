@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>Knowledge</title>
+  <link rel="stylesheet" href="__KNOWLEDGE_BASE_PATH__workspace-assets/styles.css">
+  <script type="module" src="__KNOWLEDGE_BASE_PATH__workspace-assets/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-zh="跳到知识内容">Skip to content</a>
+  <div class="shell">
+    <aside class="sidebar" aria-label="Library navigation" data-zh-label="知识内容导航">
+      <a class="brand" id="knowledge-home" href="__KNOWLEDGE_BASE_PATH__" aria-label="Library home" data-zh-label="返回知识库首页">Knowledge<span data-zh="知识库">Library</span></a>
+      <nav id="libraries" aria-label="Libraries" data-zh-label="知识内容"></nav>
+      <nav id="collections" class="collection-nav" aria-label="Collections" data-zh-label="集合" hidden></nav>
+      <details id="reader-outline" class="reader-outline" hidden>
+        <summary><span data-zh="目录">Contents</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4"/></svg></summary>
+        <nav id="outline-items" aria-label="Page contents" data-zh-label="本页目录"></nav>
+      </details>
+      <button type="button" id="language">简体中文</button>
+    </aside>
+    <main id="main" tabindex="-1" aria-busy="true">
+      <div id="notice" class="notice" role="status" data-zh="正在读取知识库…">Loading Knowledge…</div>
+      <section id="library-content" hidden>
+        <div class="library-heading">
+          <div><h1 id="library-name"></h1><p id="library-description" class="description"></p></div>
+        </div>
+        <dl id="overview-counts" class="overview-counts" aria-label="Library statistics" data-zh-label="知识库统计" hidden></dl>
+        <section id="paper-statistics" aria-label="Conference papers" data-zh-label="会议论文统计" hidden></section>
+        <form id="search-form" class="search-form" role="search">
+          <label class="visually-hidden" for="search-input" data-zh="搜索当前知识库">Search this library</label>
+          <input id="search-input" type="search" placeholder="Search this library" data-zh-placeholder="搜索当前知识库" maxlength="100" autocomplete="off">
+          <button type="submit" data-zh="搜索">Search</button>
+        </form>
+        <div id="entry-list" class="entry-list"></div>
+      </section>
+      <article id="reader" class="reader" hidden></article>
+    </main>
+  </div>
+</body>
+</html>
