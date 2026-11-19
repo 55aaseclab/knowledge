@@ -10,3 +10,7 @@ npm start -- --host 127.0.0.1 --port 4324
 ```
 
 Open http://127.0.0.1:4324/. Set absolute `KNOWLEDGE_DATA_DIR` and `KNOWLEDGE_INBOX_ROOT` for private storage and ingestion. Parsers use Python 3, pdftotext for PDF, catdoc for DOC, and Python xlrd/openpyxl as needed. Signed operations require private service configuration. Run `npm test` for native fixtures.
+
+## Praxis integration
+
+The app-owned [provider contract](docs/PRAXIS-PROVIDER.md) supplies authorized source-backed cards and data-source metadata without exposing a new HTTP endpoint. Run `npm run test:provider` for the isolated provider checks.
