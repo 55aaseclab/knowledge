@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "knowledge",
+  "version": "0.1.25",
+  "kind": "app",
+  "name": "Knowledge",
+  "description": "Notes, books and sources",
+  "labels": {
+    "en": {
+      "name": "Knowledge",
+      "description": "Notes, books and sources"
+    },
+    "zh": {
+      "name": "Knowledge",
+      "description": "笔记与藏书"
+    }
+  },
+  "icon": "public/praxis-icon.svg",
+  "iconAliases": [
+    "/knowledge-icon.svg"
+  ],
+  "path": "/",
+  "port": 4324,
+  "documents": {
+    "prd": {
+      "en": "docs/PRD.en.md",
+      "zh": "docs/PRD.md"
+    }
+  }
+}
